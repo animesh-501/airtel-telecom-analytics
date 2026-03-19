@@ -1,0 +1,35 @@
+# Airtel Telecom Analytics Pipeline
+# Animesh Choubey | github.com/animesh-501
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+
+# Core data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data generation
+Faker>=19.0.0
+
+# AI data synthesis
+sdv>=1.9.0
+
+# Data profiling
+ydata-profiling>=4.6.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine learning (AutoML)
+pycaret>=3.2.0
+
+# Time series forecasting
+prophet>=1.1.4
+
+# Database
+sqlalchemy>=2.0.0
+
+# Utilities
+ipykernel>=6.0.0
+jupyterlab>=4.0.0
