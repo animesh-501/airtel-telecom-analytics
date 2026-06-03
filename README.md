@@ -1,17 +1,27 @@
 # Airtel Telecom Analytics Pipeline
 
-> End-to-end analytics pipeline for a telecom operator — synthetic data generation, cleaning, EDA, churn prediction & revenue forecasting.  
-> **Animesh Choubey** · [linkedin.com/in/choubey-animesh](https://linkedin.com/in/choubey-animesh) · [animesh-501.github.io](https://animesh-501.github.io)
+**Animesh Choubey** | MSBA, Cal State East Bay  
+Python · SQL · PyCaret · Prophet · SQLite · pandas · seaborn
 
 ---
 
-## Business Problem
+## Background
 
-Telecom operators lose 2–3% of their subscriber base monthly to churn. At scale, that's millions in lost recurring revenue. The problem isn't identifying that churn happens — it's knowing *which customers are about to leave, why, and what it costs to retain them.*
+From 2020 to 2021, I managed 50+ enterprise Airtel accounts as an Account Manager. I tracked churn signals manually — billing arrears, support escalations, plan capacity limits — across Oracle CRM and Power BI dashboards. The process was fragmented and reactive. By the time an account showed up as at-risk, we had already lost leverage.
+
+This project puts a scoring system around what was previously gut feel and disconnected reporting. The churn signals, risk tiers, and revenue forecasting logic in this pipeline are modeled directly on what I saw in that role.
+
+*Data is synthetic (no customer PII). Distributions and churn rates are calibrated to match published Indian telecom benchmarks.*
+
+---
+
+## The Problem
+
+Telecom operators lose 2–3% of their subscriber base monthly to churn. The problem isn't identifying that churn happens — it's knowing **which customers are about to leave, why, and what it costs to retain them.**
 
 This pipeline answers three operational questions:
 1. **Who is at risk?** — Score every customer by churn probability
-2. **Why are they leaving?** — Identify the dominant signals (billing arrears, support escalations, network issues)
+2. **Why are they leaving?** — Identify dominant signals (billing arrears, support escalations, network issues)
 3. **What's the revenue impact?** — Forecast 6-month revenue under current churn trajectory
 
 ---
@@ -106,6 +116,5 @@ Run notebooks in order: `01 → 02 → 03 → 04`
 
 **Risk weights documented in one place** — `RISK_WEIGHTS` dict in `utils.py` explains what each factor measures and why it's weighted that way. Tunable without touching scoring logic.
 
----
-
-*Part of Animesh Choubey's analytics portfolio — [animesh-501.github.io](https://animesh-501.github.io)*
+--- 
+[linkedin.com/in/choubey-animesh](https://linkedin.com/in/choubey-animesh) · [animesh-501.github.io](https://animesh-501.github.io)
