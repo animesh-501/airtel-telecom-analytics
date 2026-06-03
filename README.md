@@ -1,6 +1,6 @@
 # Airtel Telecom Analytics Pipeline
 
-**Animesh Choubey** | MSBA, Cal State East Bay  
+**Animesh Choubey** | MSBA Grad, Cal State East Bay  2026
 Python · SQL · PyCaret · Prophet · SQLite · pandas · seaborn
 
 ---
